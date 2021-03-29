@@ -3,6 +3,11 @@ let swiper = new Swiper('.swiper-container', {
     delay: 5000,
   },
   loop: true,
-  slidesPerView: 3.5,
+  slidesPerView: 1.5,
   centeredSlides: true, 
+  breakpoints: {
+    1000: {
+      slidesPerView: 3.5,
+    }
+  }
 });

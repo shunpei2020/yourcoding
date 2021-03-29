@@ -1,0 +1,25 @@
+@import "../setting/breakpoint";
+
+@mixin xls {
+  @media screen and (max-width: $xlarge) {
+    @content;
+  }
+}
+
+@mixin ls {
+  @media screen and (max-width: $large) {
+    @content;
+  }
+}
+
+@mixin ms {
+  @media screen and (max-width: $medium) {
+    @content;
+  }
+}
+
+@mixin ss {
+  @media screen and (max-width: $small) {
+    @content;
+  }
+}

@@ -6,58 +6,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex">
   <title>ユアコーディング</title>
+  <link rel="icon" href="img/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="src/sass/page/front-page.css">
+  <link rel="stylesheet" href="css/front-page.css">
 </head>
 <body>
   <header class="header">
+    <span class="burger-musk"></span>
     <div class="header-inner">
       <div class="header-logo">
-        <a href=""><img src="img/logo.png" alt="ユアコーディング"></a>
+        <a href="#top"><img src="img/logo.png" alt="ユアコーディング"></a>
         <h1 class="header-ttl">ユアコーディング</h1>
       </div><!-- /.header-inner -->
       <nav class="header-nav">
         <ul>
-          <li><a href="">特徴</a></li>
-          <li><a href="">価格</a></li>
-          <li><a href="">お問い合わせ</a></li>
+          <li><a href="#features">特徴</a></li>
+          <li><a href="#price">価格</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
         </ul>
       </nav><!-- /.header-nav-->
       <div class="header-btn">
-        <a href="" class="contact-btn">お問い合わせ</a>
+        <a href="#contact" class="contact-btn">お問い合わせ</a>
       </div>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div><!-- /.burger -->
     </div><!-- /.header -->
+    <div class="nav-links" id="links">
+      <ul>
+        <li><a href="#features">特徴</a></li>
+        <li><a href="#price">価格</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </div><!-- /.nav-links -->
   </header>
-
   <main>
-    <section class="main">
+    <section class="main"
+    id="top">
       <div class="main-inner">
-        <div class="main-catch">
+        <div class="main-catch" data-aos="fade-up">
           <h2>コーディングの手間を
             最小に、デザインに注力
             する助けに</h2>
-          <p>ユアコーディングはコーディングに
-            特化したフリーランス
-            デザインに注力されたい方の
+          <p>ユアコーディングはコーディングに<br>
+            特化したフリーランス<br>
+            デザインに注力されたい方の<br>
             助けになります</p>
-            <a href="" class="contact-btn">お問い合わせ</a>
+            <a href="#contact" class="contact-btn c-btn">お問い合わせ</a>
         </div><!-- /.main-catch -->
         <div class="main-image">
-         <img src="img/main.png" alt="メインイメージ">
+         <img src="img/main.png" alt="メインイメージ" data-aos="zoom-in">
         </div>
       </div><!-- /.main-inner -->
     </section><!-- /.main -->
-    <section class="features">
+    <section class="features" id="features">
       <div class="features-inner">
-        <h1 class="features-ttl">ユアコーディング3つの特徴</h1>
-        <p class="features-sub">features</p>
+        <h1 class="features-ttl" data-aos="fade-up">ユアコーディング3つの特徴</h1>
+        <p class="features-sub" data-aos="fade-up">features</p>
         <div class="features-coding">
-          <h2>高速コーディング</h2>
+          <h2 data-aos="fade-up">高速コーディング</h2>
           <div class="features-box">
-            <figure><img src="img/feature01.png" alt="特徴１"></figure>
-            <div class="features-content">
+            <figure><img src="img/feature01.png" alt="特徴１" data-aos="zoom-in-up"></figure>
+            <div class="features-content" data-aos="zoom-in">
               <h3>コーディングに特化したフリーランスのため、<br>
                 スピード感を持った開発が可能。</h3>
               <p>開発は常にスピードとの勝負です。<br>
@@ -68,9 +83,9 @@
           </div><!-- /.features-img -->
         </div><!-- /.features-coding -->
         <div class="features-coding">
-          <h2>高品質</h2>
-          <div class="features-box">
-            <div class="features-content">
+          <h2 data-aos="fade-up">高品質</h2>
+          <div class="features-box reverce">
+            <div class="features-content" data-aos="zoom-in">
               <h3>正しいマークアップで、<br>
                 内部SEOに強いコーディングを<br>
                 デフォルトで行います。</h3>
@@ -78,14 +93,14 @@
                 「保守しやすい」「拡張しやすい」と言った設計をもとに<br>
                 きちんとコーディングを行うため、納品後も安心です。</p>
             </div><!-- /.features-content -->
-            <figure><img src="img/feature02.png" alt="特徴２"></figure>
+            <figure><img src="img/feature02.png" alt="特徴２" data-aos="zoom-in-up"></figure>
           </div><!-- /.features-img -->
         </div><!-- /.features-coding -->
         <div class="features-coding">
-          <h2>迅速なレスポンス</h2>
+          <h2 data-aos="fade-up">迅速なレスポンス</h2>
           <div class="features-box">
-            <figure><img src="img/feature03.png" alt="特徴３"></figure>
-            <div class="features-content">
+            <figure><img src="img/feature03.png" alt="特徴３" data-aos="zoom-in-up"></figure>
+            <div class="features-content" data-aos="zoom-in">
               <h3>原則いただいたメッセージは、<br>
                 業務時間内であれば6時間以内に<br>
                 お返しいたします。</h3>
@@ -98,11 +113,11 @@
         </div><!-- /.features-coding -->
       </div><!-- /.features-inner -->
     </section><!-- /.features-->
-    <section class="price">
+    <section class="price" id="price">
       <div class="price-inner">
-        <h2 class="price-ttl">価格</h2>
-        <p class="price-sub">price</p>
-        <table class="price-table">
+        <h2 class="price-ttl" data-aos="fade-up">価格</h2>
+        <p class="price-sub" data-aos="fade-up">price</p>
+        <table class="price-table" data-aos="fade-up">
           <tr>
             <th>HTMLコーディングトップページ</th>
             <td>30.000円〜</td>
@@ -120,13 +135,14 @@
             <td>15.000円〜</td>
           </tr>
         </table><!-- /.price-table -->
+        <p class="price-detail" data-aos="zoom-in">※詳細な価格はページ仕様によって異なります。</p>
       </div><!-- /.price-inner -->
     </section><!-- /.price -->
     <section class="faq">
       <div class="faq-inner">
-        <h2 class="faq-ttl">よくある質問</h2>
-        <p class="faq-sub">FAQ</p>
-        <div class="acordion">
+        <h2 class="faq-ttl" data-aos="fade-up">よくある質問</h2>
+        <p class="faq-sub" data-aos="fade-up">FAQ</p>
+        <div class="acordion" data-aos="fade-in">
           <h4 class="acordion-ttl is-active">デザインから一貫してお願いすることは可能でしょうか</h4>
           <div class="acordion-content is-open">
             ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。<br>
@@ -145,29 +161,29 @@
     </section><!-- /.faq -->
     <section class="blog">
       <div class="blog-inner">
-        <h2 class="blog-ttl">ブログ</h2>
-        <p class="blog-sub">BLOG</p>
+        <h2 class="blog-ttl" data-aos="fade-up">ブログ</h2>
+        <p class="blog-sub" data-aos="fade-up">BLOG</p>
         <div class="blog-box">
-          <div class="blog-item">
+          <div class="blog-item" data-aos="flip-left">
             <img src="img/blog1.png" alt="ブログ１">
             <div class="blog-content">
               <h3>サイトをリニューアルオープンしました。</h3>
               <span>2020.01.03</span>
             </div><!-- /.blog-content -->
           </div><!-- /.blog-item -->
-          <div class="blog-item">
+          <div class="blog-item" data-aos="flip-left">
             <img src="img/blog2.png" alt="ブログ２">
             <div class="blog-content">
-              <h3>WebサイトでSEO内部施策に適したコー<br>
-                ディングでどれぐらいサイトが早くなるの<br>
+              <h3>WebサイトでSEO内部施策に適したコー
+                ディングでどれぐらいサイトが早くなるの
                 か検証してみました</h3>
               <span>2020.01.24</span>
             </div><!-- /.blog-content -->
           </div><!-- /.blog-item -->
-          <div class="blog-item">
+          <div class="blog-item" data-aos="flip-left">
             <img src="img/blog3.png" alt="ブログ３">
             <div class="blog-content">
-              <h3>ユアコーディングではデザイナーの方を<br>
+              <h3>ユアコーディングではデザイナーの方を
                 広く募集しています。</h3>
               <span>2020.01.25</span>
             </div><!-- /.blog-content -->
@@ -177,71 +193,79 @@
     </section><!-- /.blog-->
     <div class="works">
       <div class="works-inner">
-        <h2 class="works-ttl">制作実績</h2>
-        <p class="works-sub">WORKS</p>
+        <h2 class="works-ttl" data-aos="zoom-in">制作実績</h2>
+        <p class="works-sub" data-aos="zoom-in">WORKS</p>
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="img/works3.png" alt="作品３">
-              <div class="item">
-                <h3>コーディングカンファレンスのイベント
-                  LPの制作を行いました！</h3>
-                <p>採用技術：jQuery,Bootstrap4<br>
-                  実装期間：4週間<br>
-                  担当コーダー：石井</p>
-              </div><!-- /.item -->
+              <div class="items">
+                <img src="img/works3.png" alt="作品３">
+                <div class="item">
+                  <h3>コーディングカンファレンスのイベント
+                    LPの制作を行いました！</h3>
+                  <p>採用技術：jQuery,Bootstrap4<br>
+                    実装期間：4週間<br>
+                    担当コーダー：石井</p>
+                </div><!-- /.item -->
+              </div><!-- /.items -->
             </div><!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="img/works1.png" alt="作品１">
-              <div class="item">
-                <h3>株式会社サンプル様採用サイトのコーデ
-                  ィングを行いました！</h3>
-                <p>採用技術：jQuery,Bootstrap4<br>
-                  実装期間：2週間<br>
-                  担当コーダー：石井</p>
-              </div><!-- /.item -->
+              <div class="items">
+                <img src="img/works1.png" alt="作品１">
+                <div class="item">
+                  <h3>株式会社サンプル様採用サイトのコーデ
+                    ィングを行いました！</h3>
+                  <p>採用技術：jQuery,Bootstrap4<br>
+                    実装期間：2週間<br>
+                    担当コーダー：石井</p>
+                </div><!-- /.item -->
+              </div><!-- /.items -->
             </div><!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="img/works2.png" alt="作品２">
-              <div class="item">
-                <h3>株式会社サンプル様採用サイトのコーデ
-                  ィングを行いました！</h3>
-                <p>採用技術：jQuery,Bootstrap4<br>
-                  実装期間：4週間<br>
-                  担当コーダー：石井</p>
-              </div><!-- /.item -->
+              <div class="items">
+                <img src="img/works2.png" alt="作品２">
+                <div class="item">
+                  <h3>株式会社サンプル様採用サイトのコーデ
+                    ィングを行いました！</h3>
+                  <p>採用技術：jQuery,Bootstrap4<br>
+                    実装期間：4週間<br>
+                    担当コーダー：石井</p>
+                </div><!-- /.item -->
+              </div><!-- /.items -->
             </div><!-- /.swiper-slide -->
           </div><!-- /.swiper-wrraper -->
         </div><!-- /.swiper-container -->
       </div><!-- /.works-inner -->
     </div><!-- /.works -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contact-inner">
-        <h2 class="contact-ttl">お問い合わせ</h2>
-        <p class="contact-sub">CONTACT</p>
-        <p class="contact-content">コーディングの人出が足りないとき、<br>
+        <h2 class="contact-ttl" data-aos="fade-up">お問い合わせ</h2>
+        <p class="contact-sub" data-aos="fade-up">CONTACT</p>
+        <p class="contact-content" data-aos="fade-up">コーディングの人出が足りないとき、<br>
           あなたの力になります</p>
-        <div class="form">
-          <form action="">
+        <div class="form" data-aos="zoom-up">
+          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdFrTq6VAjLYUAPJRHpZGiqG-LP07WP_cKR2VRZ9Rtmk4UkBQ/formResponse" id="form">
             <div class="form-area">
               <p class="label">お名前</p>
-              <input type="text" name="name" id="">
+              <input type="text" name="entry.1391155728" id="name" placeholder="お名前">
             </div>
             <div class="form-area">
               <p class="label">メールアドレス</p>
-              <input type="email" name="email" id="">
+              <input type="email" name="entry.1722684487" id="email" placeholder="メールアドレス">
             </div>
             <div class="form-area">
               <p class="label">お問い合わせ内容</p>
-              <textarea name="content" id="" cols="30" rows="10"></textarea>
+              <textarea name="entry.119071231" id="content" cols="30" rows="10" placeholder="お問い合わせ内容"></textarea>
             </div>
             <div class="privacy">
-              <input type="checkbox" name="privacy" id="">
+              <input type="checkbox" name="privacy" id="" required>
               <p>プライバシーポリシーに同意する</p>
             </div><!-- /.privacy -->
-            <input class="contact-btn" type="submit" value="送信する">
+            <input class="contact-btn submit-btn" type="submit" value="送信する">
           </form>
         </div><!-- /.form -->
+        <p class="end-message">お問い合わせありがとうございました</p>
+        <p class="false-message">送信失敗です</p>
       </div><!-- /.contact-inner -->
     </section><!-- /.contact -->
   </main>
@@ -258,8 +282,13 @@
   </footer><!-- /.footer -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/acordion.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/swiper.js"></script>
+  <script src="js/Ajax.js"></script>
+  <script src="js/burger.js"></script>
 </body>
 </html>
