@@ -31,7 +31,6 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     background-position: top -150px right -150px;
-    background-size: contain;
   }
 }
 
@@ -44,12 +43,12 @@
 
 @media screen and (max-width: 1250px) {
   .main-inner {
-    padding: 100px 0;
+    padding: 100px 10px 0px;
   }
 }
 
 .main-catch {
-  width: 351px;
+  max-width: 351px;
   text-align: left;
 }
 
@@ -85,14 +84,22 @@
 
 @media screen and (max-width: 1250px) {
   .main-image {
-    right: 5%;
+    right: 10%;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .main-image {
-    position: initial;
-    height: 350px;
+    width: 80%;
+    position: unset;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-image img {
+    max-width: 200px;
   }
 }
 
@@ -100,7 +107,13 @@
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
-  padding: 100px 150px;
+  padding: 100px 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .features-inner {
+    padding: 50px 0;
+  }
 }
 
 .features-ttl {
@@ -157,6 +170,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -176,13 +190,20 @@
 }
 
 .features-box img {
-  width: 380px;
-  height: 314px;
+  max-width: 380px;
+  height: auto;
 }
 
 @media screen and (max-width: 1000px) {
   .features-box img {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .features-box img {
+    width: 70%;
+    height: auto;
   }
 }
 
@@ -213,7 +234,8 @@
 
 .price {
   background-color: #eefbfb;
-  padding: 64px 20px 120px;
+  padding: 50px 20px 80px;
+  overflow: hidden;
 }
 
 .price-inner {
@@ -223,7 +245,7 @@
 }
 
 .price-ttl {
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -252,7 +274,7 @@
 }
 
 .price-table {
-  max-width: 926px;
+  width: 95%;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -268,7 +290,7 @@
 
 @media screen and (max-width: 1000px) {
   .price-table {
-    max-width: 800px;
+    width: 90%;
   }
 }
 
@@ -299,6 +321,12 @@
   text-align: center;
   font-size: 16px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .price-detail {
+    font-size: 12px;
+  }
 }
 
 .faq-inner {
@@ -739,6 +767,7 @@
 @media screen and (max-width: 1000px) {
   .footer-ttl {
     font-size: 18px;
+    margin-bottom: 20px;
   }
 }
 
@@ -759,6 +788,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     font-size: 12px;
+    margin-bottom: 30px;
   }
 }
 

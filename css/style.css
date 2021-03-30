@@ -176,6 +176,7 @@ body.noscroll {
 
 img {
   height: auto;
+  min-width: 100%;
 }
 
 a {
@@ -231,7 +232,7 @@ a {
 
 @media screen and (max-width: 1000px) and (max-width: 768px) {
   .header .nav-links ul {
-    margin: 40%  auto;
+    margin: 40% auto;
   }
 }
 
@@ -293,6 +294,12 @@ a {
   font-size: 24px;
   font-weight: bold;
   margin-left: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-ttl {
+    font-size: 20px;
+  }
 }
 
 .header-nav ul {
