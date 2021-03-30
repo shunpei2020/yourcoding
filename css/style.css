@@ -236,12 +236,6 @@ a {
   }
 }
 
-@media screen and (max-width: 1000px) and (max-width: 480px) {
-  .header .nav-links ul {
-    margin: 60% auto;
-  }
-}
-
 @media screen and (max-width: 1000px) {
   .header .nav-links ul li {
     list-style: none;
