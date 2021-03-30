@@ -232,7 +232,7 @@ a {
 
 @media screen and (max-width: 1000px) and (max-width: 768px) {
   .header .nav-links ul {
-    margin: 40% auto;
+    margin: 50% auto;
   }
 }
 
