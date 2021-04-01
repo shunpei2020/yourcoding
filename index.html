@@ -247,21 +247,21 @@
           <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdFrTq6VAjLYUAPJRHpZGiqG-LP07WP_cKR2VRZ9Rtmk4UkBQ/formResponse" id="form">
             <div class="form-area">
               <p class="label">お名前</p>
-              <input type="text" name="entry.1391155728" id="name" placeholder="お名前">
+              <input type="text" name="entry.1391155728" id="name" required placeholder="お名前">
             </div>
             <div class="form-area">
               <p class="label">メールアドレス</p>
-              <input type="email" name="entry.1722684487" id="email" placeholder="メールアドレス">
+              <input type="email" name="entry.1722684487" id="email" required placeholder="メールアドレス">
             </div>
             <div class="form-area">
               <p class="label">お問い合わせ内容</p>
-              <textarea name="entry.119071231" id="content" cols="30" rows="10" placeholder="お問い合わせ内容"></textarea>
+              <textarea name="entry.119071231" id="content" cols="30" rows="10" required placeholder="お問い合わせ内容"></textarea>
             </div>
             <div class="privacy">
-              <input type="checkbox" name="privacy" id="" required>
+              <input type="checkbox" name="privacy" id="privacyCheck" required>
               <p>プライバシーポリシーに同意する</p>
             </div><!-- /.privacy -->
-            <input class="contact-btn submit-btn" type="submit" value="送信する">
+            <input class="contact-btn submit-btn" type="submit" value="送信する" id="js-submit" disabled>
           </form>
         </div><!-- /.form -->
         <p class="end-message">お問い合わせありがとうございました</p>
@@ -290,5 +290,6 @@
   <script src="js/swiper.js"></script>
   <script src="js/Ajax.js"></script>
   <script src="js/burger.js"></script>
+  <script src="js/form.js"></script>
 </body>
 </html>
