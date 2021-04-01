@@ -760,6 +760,10 @@
   margin-right: auto;
 }
 
+.contact-btn:disabled {
+  opacity: .5;
+}
+
 .contact .end-message {
   display: none;
   margin: 30px auto;
